@@ -1,0 +1,53 @@
+@media screen and (max-width: 1020px) {
+    .items_container {
+        padding: 0 15px 0 15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item {
+        max-width: 45%
+    }
+}
+
+/*Стили, что бы убрать наведение на десктопах*/
+@media (max-width: 906px) {
+    .payment_method_pw:hover{
+        background-color: #ede1d1
+    }
+}
+
+@media screen and (max-width: 732px) {
+    .items_container {
+        padding: 0 15px 0 15px;
+        display: flex;
+    }
+
+    .item {
+        max-width: 100%;
+    }
+
+    .item_img_block {
+        padding: 0;
+    }
+
+    .discount_block {
+        max-width: 23%;
+        min-width: 23%;
+    }
+
+    .text_special_price {
+        width: 76%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .discount_block {
+        max-width: 35%;
+        min-width: 35%;
+    }
+
+    .text_special_price {
+        width: 63%
+    }
+}

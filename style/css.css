@@ -1,0 +1,317 @@
+/*Сброс margin и padding*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Стили для всех ссылок*/
+a {
+    text-decoration: none;
+}
+
+/*Стили для главного контейнера с карточками товара*/
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*Стили для блока Header со значком яндекс такси и текстом*/
+.header {
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    background-color: #e7e7e5;
+    margin-bottom: 20px;
+    /*visibility: hidden;*/
+}
+
+/*Стили для блока, который должен быть раскрашен как я ндекс такси. Сделать через бефор и афтер*/
+.yandex_taxi_block {
+
+}
+
+/*Стили для текста "выбор по типу оборудования"*/
+.header_choose_text {
+    padding-left: 20px;
+    color: #1f3948;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*Стили для родительского блока с карточками товара*/
+.items_container {
+    padding: 0 15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    /*visibility: hidden;*/
+}
+
+/*Стили для каждой карточки товара по отдельности*/
+.item {
+    padding-right: 15px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    border: 1px solid #dddddd;
+    max-width: 30%;
+    margin-bottom: 10px;
+}
+
+/*Стили для блока с картинкой товара и таймером*/
+.item_image_container {
+    display: flex;
+    align-items: center;
+}
+/*Стили для родительского блока картинки*/
+.item_img_block {
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+/*Стили для катинки*/
+.item_img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/*Стили для таймера*/
+.timer {
+
+}
+
+/*Стили для имени товара*/
+.name {
+    text-transform: uppercase;
+    color: #677077;
+    margin-bottom: 20px;
+    word-break: break-word;
+}
+
+/*Стили для "пороги"*/
+.porogi {
+    color: #677077;
+    font-weight: bold;
+    margin-bottom: 20px;
+    word-break: break-word;
+}
+
+/*Стили для кода товара*/
+.item_id {
+    max-width: 100%;
+    text-align: center;
+    color: #2180ba;
+    border: 2px solid #2180ba;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    word-break: break-word;
+    padding: 10px 0;
+}
+
+/*Стили для производителя*/
+.manufacturer {
+    color: #677077;
+    margin-top: 5px;
+    word-break: break-word;
+}
+
+/*Стили для родительского болока с количеством товара и иконкой*/
+.item_stock_сontainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+/*Стили для иконки количества товара*/
+.item_stock_icon {
+    margin-right: 10px;
+}
+
+/*Стили для текста количеста товара*/
+.item_stock_text {
+    color: #908990;
+}
+
+/*Стили для родительского блока со скидкой и специальным предложением */
+.discount_block_container {
+    background-color: #212123;
+    max-width: 100%;
+    min-height: 100px;
+    margin-bottom: 10px;
+}
+
+/*Стили для блока со скидкой и супер ценой*/
+.discount_and_super_price_container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #a2d242;
+}
+
+/*Стили для блока со скидкой -15%*/
+.discount_block {
+    text-align: center;
+    background-color: #0b8adb;
+    border: 1px solid greenyellow;
+    position: absolute;
+    display: inline-block;
+    left: 10px;
+    bottom: -1px;
+}
+
+/*Стили для текста со скидкой -15%*/
+.discount_text {
+    padding: 10px 10px;
+    color: white;
+    font-size: 26px;
+    word-break: break-word;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*Стили для слова "скидка"*/
+.discount_word {
+    display: block;
+    padding-top: 15px;
+}
+
+/*Стили для блока с текстом супер цена*/
+.special_price {
+
+}
+
+/*Стили для текста "супер цена"*/
+.text_special_price {
+    border-bottom: 3px solid #0b8adb;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: #a2d242;
+    line-height: 20px;
+}
+
+/*Стили для блока "скидка по карте"*/
+.discount_by_card_block {
+    padding: 10px 0;
+}
+
+/*Стили для текста "скидка по карте"*/
+.discount_by_card_text {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/*Стили для старой цены*/
+.old_price {
+    color: #959a9e;
+    margin-bottom: 10px;
+}
+
+/*Стили для старой перечеркнутой цены*/
+.out_price {
+    text-decoration: line-through;
+}
+
+/*Стили для новой цены*/
+.new_price {
+    color: #e89a47;
+    margin-bottom: 15px;
+}
+
+/*Стили для новой цены большими буквами*/
+.big_price {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/*Стили для кнопки "купить"*/
+.buy_link {
+    background-color: #fea500;
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/*Стили для родительского блока с сердечком и стрлочкой  */
+.heart_and_arrow_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Стили для блока с сердечком*/
+.heart_block {
+    display: flex;
+    align-items: center;
+}
+
+/*Стили для иконки сердечка*/
+.heart_icon {
+    margin-right: 5px;
+
+}
+
+/*Стили для текста "отложить" в блоке с сердцечком*/
+.heart_block_link {
+
+}
+
+/*Стили для блока со стрелочкой*/
+.arrow_block {
+    display: flex;
+    align-items: center;
+}
+
+/*Стили для иконки стрелочки*/
+.arrow_icon {
+    margin-right: 5px;
+}
+
+/*Стили для текста "подробнее"*/
+.arrow_block_link {
+
+}
+
+@media screen and (max-width: 1020px) {
+    .items_container {
+        padding: 0 15px 0 15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item {
+        max-width: 45%;
+    }
+}
+
+@media screen and (max-width: 732px) {
+    .items_container {
+        padding: 0 15px 0 15px;
+        display: flex;
+    }
+
+    .item {
+        max-width: 100%;
+    }
+
+    .item_img_block {
+        padding: 0px;
+    }
+
+    .discount_text {
+        padding: 0px;
+    }
+}
+
+
+
+
+
+

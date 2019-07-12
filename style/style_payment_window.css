@@ -1,0 +1,147 @@
+/*Обнуление margin и pading*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Стили Для главного контейнера со способами оплаты*/
+.container_pw {
+    max-width: 1280px;
+    min-width: 320px;
+    margin: 0 auto;
+    visibility: hidden;
+    position: absolute;
+}
+
+/*Стили для верхнего блока Header, в котором находятся текст и крестик*/
+.header_pw {
+    position: relative;
+    padding: 0 20px;
+    background-color: #db6655;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+
+/*Стили для текста в верхнем блоке Header*/
+.header_text_pw {
+    line-height: 60px;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*Стили для Крестика*/
+.close_pw {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    opacity: 0.7;
+    right: 20px;
+}
+
+.close_pw:hover {
+    opacity: 1;
+}
+
+.close_pw:before, .close_pw:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 30px;
+    width: 3px;
+    background-color:  #ed8677;
+}
+.close_pw:before {
+    transform: rotate(45deg);
+}
+.close_pw:after {
+    transform: rotate(-45deg);
+}
+
+/*Стили для родительского блока с методами оплаты*/
+.payment_methods_container_pw {
+    background-color: #ede1d1;
+}
+
+/*Стили для родительского блока с текстом "Мгновенная оплата"*/
+.instant_payment_text_pw {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 15px;
+}
+
+/*Стили для текста "Мгновенная оплата"*/
+.pay_text_h2_pw {
+    color: #918579;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+/*Стили для родительского блока с методами оплаты*/
+.parent_payment_methods_pw {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Стили для отдельного блока со способом оплаты*/
+.payment_method_pw {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    flex-grow: 1;
+    flex-basis: 450px;
+}
+
+.payment_method_pw:hover {
+    background-color: #faf4e6;
+}
+
+/*Стили для родительского блока с картинкой банка*/
+.payment_img_container_pw {
+    display: flex;
+    align-items: center;
+    max-height: 152.5px;
+    max-width: 25%;
+    min-width: 25%;
+    margin-right: 20px;
+}
+
+/*Стиль для картинки банка*/
+.pay_img_pw {
+    display: block;
+    max-width: 100%;
+    max-height: 150px;
+}
+
+/*Стили для родительского блока с названием банка */
+.payment_name_container_pw {
+
+}
+
+/*Стили для имени банка*/
+.payment_name__name_pw {
+    color: #6b5d52;
+    word-break: break-word;
+}
+
+/*Стили для текста "комиссия"*/
+.payment_name__commission_pw {
+    color: #c18c7a;
+}
+
+/*Стили для процентов в тексте "комиссия"*/
+.commission_percent_pw {
+    font-weight: bold;
+}
+
+/*Стили, что бы убрать наведение на десктопах*/
+@media (max-width: 906px) {
+    .payment_method:hover {
+        background-color: #ede1d1;
+    }
+}
+
